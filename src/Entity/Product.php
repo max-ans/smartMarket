@@ -42,6 +42,11 @@ class Product
      */
     private $state = [];
 
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private $putForward;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -103,6 +108,18 @@ class Product
     public function setState(array $state): self
     {
         $this->state = $state;
+
+        return $this;
+    }
+
+    public function getPutForward(): ?bool
+    {
+        return $this->putForward;
+    }
+
+    public function setPutForward(?bool $putForward): self
+    {
+        $this->putForward = $putForward;
 
         return $this;
     }
