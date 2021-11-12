@@ -28,4 +28,9 @@ final class Version20211112171418 extends AbstractMigration
         // this down() migration is auto-generated, please modify it to your needs
         $this->addSql('ALTER TABLE product DROP put_forward');
     }
+    
+    public function isTransactional(): bool
+    {
+        return false;
+    }
 }
