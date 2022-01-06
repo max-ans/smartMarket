@@ -21,4 +21,31 @@ html, body {
     border-radius: 15px;
     position: relative;
     top: 10rem;
+    transition: all 0.5s;
+}
+
+@media screen and (min-width: 576px) { 
+
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) { 
+    
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) { 
+    .banner-info {
+        width: 50%;
+    }
+}
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) { 
+
+}
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media screen and (min-width: 1400px) { 
+
 }
